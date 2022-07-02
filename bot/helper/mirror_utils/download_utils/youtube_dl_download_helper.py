@@ -163,6 +163,7 @@ class YoutubeDLHelper:
     def add_download(self, link, path, name, qual, playlist, args):
         if playlist:
             self.opts['ignoreerrors'] = True
+            self.is_playlist = True
         self.__gid = ''.join(SystemRandom().choices(ascii_letters + digits, k=10))
         self.__onDownloadStart()
         if qual.startswith('ba/b'):
