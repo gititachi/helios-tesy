@@ -60,7 +60,8 @@ class YoutubeDLHelper:
                      'embedsubtitles': True,
                      'prefer_ffmpeg': True,
                      'cookiefile': 'cookies.txt',
-                     'ffmpeg_location': '/bin/new-api'}
+                     'ffmpeg_location': '/bin/new-api'
+                     'extract_flat': 'in_palylist'}
 
     @property
     def download_speed(self):
